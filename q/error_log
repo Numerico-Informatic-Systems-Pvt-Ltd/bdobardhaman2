@@ -1,0 +1,4 @@
+[26-Jun-2015 17:22:40] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home5/bdobard2/public_html/q/we.php on line 1
+[26-Jun-2015 17:22:40] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home5/bdobard2/public_html/q/we.php on line 1
+[26-Jun-2015 17:22:43] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home5/bdobard2/public_html/q/we.php on line 1
+[26-Jun-2015 17:22:43] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home5/bdobard2/public_html/q/we.php on line 1

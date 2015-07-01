@@ -1,0 +1,52 @@
+[12-Jun-2014 01:24:59 America/Denver] PHP Fatal error:  Call to undefined method model::fetch_bottom_navigation() in /home2/nisclien/public_html/client/bdobardhaman/application/controllers/webpage.php on line 21
+[12-Jun-2014 01:25:05 America/Denver] PHP Fatal error:  Call to undefined method model::fetch_bottom_navigation() in /home2/nisclien/public_html/client/bdobardhaman/application/controllers/webpage.php on line 21
+[29-Nov-2014 00:33:00] PHP Parse error:  syntax error, unexpected '[' in /home4/bdobardh/public_html/index.php on line 43
+[29-Nov-2014 00:33:05] PHP Parse error:  syntax error, unexpected '[' in /home4/bdobardh/public_html/index.php on line 43
+[21-Feb-2015 06:17:17] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[21-Feb-2015 06:17:22] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[21-Feb-2015 06:19:55] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 05:54:09] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 06:12:50] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:34:25] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:34:59] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:36:33] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:37:15] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:37:22] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:39:37] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:39:43] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:42:31] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:42:57] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:46:01] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 442
+[23-Feb-2015 22:47:07] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 442
+[23-Feb-2015 22:47:10] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 442
+[23-Feb-2015 22:48:49] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 442
+[23-Feb-2015 22:49:29] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 442
+[23-Feb-2015 22:50:25] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 442
+[23-Feb-2015 22:51:27] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:51:32] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:52:44] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:52:47] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:53:02] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:53:19] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:56:48] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 22:56:53] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:06:57] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:08:31] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:24:46] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:29:00] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:29:03] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:47:30] PHP Fatal error:  Can't use method return value in write context in /home5/bdobard1/public_html/application/controllers/admin.php on line 441
+[23-Feb-2015 23:58:56] PHP Fatal error:  Call to undefined function  reditect() in /home5/bdobard1/public_html/application/controllers/admin.php on line 278
+[24-Feb-2015 00:02:33] PHP Fatal error:  Call to undefined function  reditect() in /home5/bdobard1/public_html/application/controllers/admin.php on line 278
+[24-Feb-2015 00:04:02] PHP Fatal error:  Call to undefined function  reditect() in /home5/bdobard1/public_html/application/controllers/admin.php on line 276
+[24-Feb-2015 00:04:36] PHP Fatal error:  Call to undefined function  reditect() in /home5/bdobard1/public_html/application/controllers/admin.php on line 276
+[16-Mar-2015 21:22:43] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/notification_edit.php on line 36
+[16-Mar-2015 21:23:04] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/notification_edit.php on line 36
+[16-Mar-2015 21:23:17] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/notification_edit.php on line 36
+[16-Mar-2015 21:25:02] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/staffdirectory_edit.php on line 36
+[16-Mar-2015 21:30:55] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/notification_edit.php on line 36
+[16-Mar-2015 23:00:06] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/notification_edit.php on line 36
+[16-Mar-2015 23:00:25] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/notification_edit.php on line 36
+[16-Mar-2015 23:16:09] PHP Fatal error:  Cannot use object of type stdClass as array in /home5/bdobard1/public_html/application/views/admin/staffdirectory_edit.php on line 36
+[28-Apr-2015 06:49:36] PHP Parse error:  syntax error, unexpected $end in /home5/bdobard2/public_html/application/controllers/webpage.php on line 52
+[28-Apr-2015 07:28:41] PHP Parse error:  syntax error, unexpected $end in /home5/bdobard2/public_html/application/controllers/webpage.php on line 52

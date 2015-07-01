@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <?php $this->load->view('includes/admin-header.php'); ?>
+    <body>
+        <?php $this->load->view('includes/admin-top.php'); ?>
+        <!-- Main -->
+        <div class="container">
+            <!-- upper section -->
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- left -->
+                    <a href="#"><strong><i class="glyphicon glyphicon-briefcase"></i> Toolbox</strong></a>
+                    <hr>
+                    <?php $this->load->view('includes/admin-navigation.php'); ?>
+                    <hr>
+                </div><!-- /span-3 -->
+                <div class="col-md-9">
+                    <!-- column 2 -->	
+                    <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i>Navigation Menu</strong></a>  
+                    <hr>
+                    <div class="row">
+                        <!-- center left-->	
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <i class="glyphicon glyphicon-wrench pull-right"></i>
+                                        <h4>Submit Request</h4>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <form method="POST" class="form form-vertical" enctype="multipart/form-data">
+                                        <div class="control-group">
+                                            <label>Menu Name</label>
+                                            <div class="controls">
+                                                <input name="txt_menu_name" type="text" class="form-control" placeholder="Enter Name">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label>Parent</label>
+                                            <div class="controls">
+                                                <select name="slct_parent" class="form-control">
+                                                    <option value="0">-- select parent Menu</option>
+                                                    <option value="0">Top Navigation </option>
+                                                    <?php
+                                                    foreach ($results as $k => $v) {
+                                                        ?>
+                                                        <option value="<?php echo $results[$k]['id']; ?>"><?php echo $results[$k]['name']; ?></option>
+                                                        <?php
+                                                        if (isset($results[$k]['child'])) {
+                                                            foreach ($results[$k]['child'] as $key => $value) {
+                                                                ?>
+                                                                <option value="<?php echo $results[$k]['child'][$key]['id']; ?>">----<?php echo $results[$k]['child'][$key]['name']; ?></option>
+
+                                                                <?php
+                                                                if (isset($results[$k]['child'][$key]['child'])) {
+                                                                    foreach ($results[$k]['child'][$key]['child'] as $_k => $_v) {
+                                                                        ?>
+                                                                        <option value="<?php echo $results[$k]['child'][$key]['child'][$_k]['id']; ?>">--------<?php echo $results[$k]['child'][$key]['child'][$_k]['name']; ?></option>
+                                                                        <?php
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label>Link to</label>
+                                            <div class="controls">
+                                                <select name="txt_link" class="form-control">
+                                                    <option value="0">--select page</option>
+                                                    <?php
+                                                    foreach ($page_titles as $title) {
+                                                        ?>
+                                                        <option value="<?php echo $title->slug; ?>"><?php echo $title->title; ?></option>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>   
+                                        <div class="control-group">
+                                            <label>Undeline</label>
+                                            <div class="controls">
+                                                <select name="slct_undeline" class="form-control">
+                                                    <option value="0">off</option>
+                                                    <option value="1">on</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label>widget image</label>
+                                            <div class="controls">
+                                                <input name="inp_img" type="file"/>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label>Widget Content</label>
+                                            <div class="controls">
+                                                <textarea id="txt_widget_content" name="txt_widget_content" style="height: 500px;" name="txt_description" class="form-control" placeholder="Enter Description"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label>Description</label>
+                                            <div class="controls">
+                                                <textarea name="txt_description" class="form-control" placeholder="Enter Description"></textarea>
+                                            </div>
+                                        </div> 
+                                        <div class="control-group">
+                                            <label>Rank</label>
+                                            <div class="controls">
+                                                <input name="txt_rank" type="number" class="form-control" placeholder="Enter Rank">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label></label>
+                                            <div class="controls">
+                                                <button type="submit" class="btn btn-primary">
+                                                    Post
+                                                </button>
+                                            </div>
+                                        </div>   
+                                    </form>
+                                </div><!--/panel content-->
+                            </div><!--/panel-->
+                        </div><!--/col-->
+                    </div><!--/row-->
+                </div><!--/col-span-9-->
+            </div><!--/row-->
+            <!-- /upper section -->
+            <!-- lower section -->
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#"><strong><i class="glyphicon glyphicon-list-alt"></i> Menu's</strong></a>  
+                    <hr>    
+                </div>
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr><th>ID</th><th>Rank</th><th>Menu</th><th>Link</th><th>Description</th><th></th></tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($results as $k => $v) {
+                                ?>
+                                <tr>
+                                    <td><?php echo $results[$k]['id'] ?></td>
+                                    <td><?php echo $results[$k]['rank']; ?></td>
+                                    <td><?php echo $results[$k]['name']; ?></td>
+                                    <td><?php echo $results[$k]['link']; ?></td>
+                                    <td><?php echo $results[$k]['description']; ?></td>
+                                    <td><a role="button" class="btn btn-primary btn-xs" href="<?php echo base_url() . index_page(); ?>/admin/menu/edit/<?php echo $results[$k]['id']; ?>">Edit</a></td>
+                                    <?php if(!isset($results[$k]['child'])){ ?>
+                                        <td><a role="button" class="btn btn-danger btn-xs" href="<?php echo base_url() . index_page(); ?>/admin/menu/delete/<?php echo $results[$k]['id']; ?>">Delete</a></td>
+                                    <?php } ?>
+                                </tr>
+                                <?php
+                                if (isset($results[$k]['child'])) {
+                                    foreach ($results[$k]['child'] as $key => $value) {
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $results[$k]['child'][$key]['id'] ?></td>
+                                            <td>--------<?php echo $results[$k]['child'][$key]['rank']; ?></td>
+                                            <td>--------<?php echo $results[$k]['child'][$key]['name']; ?></td>
+                                            <td><?php echo $results[$k]['child'][$key]['link']; ?></td>
+                                            <td><?php echo $results[$k]['child'][$key]['description']; ?></td>
+                                            <td><a role="button" class="btn btn-primary btn-xs" href="<?php echo base_url() . index_page(); ?>/admin/menu/edit/<?php echo $results[$k]['child'][$key]['id']; ?>">Edit</a></td>
+                                            <?php if(!isset($results[$k]['child'][$key]['child'])){ ?>
+                                        <td><a role="button" class="btn btn-danger btn-xs" href="<?php echo base_url() . index_page(); ?>/admin/menu/delete/<?php echo $results[$k]['child'][$key]['id']; ?>">Delete</a></td>
+                                    <?php } ?>
+                                        </tr>
+                                        <?php
+                                        if (isset($results[$k]['child'][$key]['child'])) {
+                                            foreach ($results[$k]['child'][$key]['child'] as $_k => $_v) {
+                                                ?>
+                                                <tr>
+                                                    <td><?php echo $results[$k]['child'][$key]['child'][$_k]['id']; ?></td>
+                                                    <td>----------------<?php echo $results[$k]['child'][$key]['child'][$_k]['rank']; ?></td>
+                                                    <td>----------------<?php echo $results[$k]['child'][$key]['child'][$_k]['name']; ?></td>
+                                                    <td><?php echo $results[$k]['child'][$key]['child'][$_k]['link']; ?></td>
+                                                    <td><?php echo $results[$k]['child'][$key]['child'][$_k]['description']; ?></td>
+                                                    <td><a role="button" class="btn btn-primary btn-xs" href="<?php echo base_url() . index_page(); ?>/admin/menu/edit/<?php echo $results[$k]['child'][$key]['child'][$_k]['id']; ?>">Edit</a></td>
+                                                    <td><a role="button" class="btn btn-danger btn-xs" href="<?php echo base_url() . index_page(); ?>/admin/menu/delete/<?php echo $results[$k]['child'][$key]['child'][$_k]['id']; ?>">Delete</a></td>
+                                                </tr>
+                                                <?php
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+        <!-- /Main -->
+        <?php $this->load->view('includes/modal/modal-success.php'); ?>
+        <!-- script references -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+<?php if ($update_success) { ?>
+                $('#addWidgetModal').modal('show');
+<?php } ?>
+        </script>
+        <script type="text/javascript">
+            tinymce.init({
+                selector: "#txt_widget_content",
+                theme: "modern",
+                height: 600,
+                // ===========================================
+                // INCLUDE THE PLUGIN
+                // ===========================================
+                plugins: [
+                    "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                    "searchreplace wordcount visualblocks visualchars code fullscreen",
+                    "insertdatetime media nonbreaking save table contextmenu directionality",
+                    "emoticons template paste textcolor "
+                ],
+                // ===========================================
+                // PUT PLUGIN'S BUTTON on the toolbar
+                // ===========================================
+                toolbar1: "insertfile undo redo | bold italic underline strikethrough forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent blockquote | link unlink anchor | image media cleanup help code | hr removeformat visualaid | insertdate inserttime | print preview tablecontrols | sub sup | charmap emotions iespell advhr | ltr rtl | fullscreen  | cut copy paste pastetext | ",
+                toolbar3: " styleselect formatselect fontselect fontsizeselect  ",
+                image_advtab: true,
+                theme_advanced_resizing: true,
+            });
+        </script>
+    </body>
+</html>

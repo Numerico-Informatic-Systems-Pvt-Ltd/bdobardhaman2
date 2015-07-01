@@ -1,0 +1,27 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php echo $result->title ?></title>
+    <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="<?php echo base_url(); ?>assets/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+    <link href="<?php echo base_url(); ?>assets/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="<?php echo base_url(); ?>assets/css/webwidget_menu_vertical_menu1.css" rel="stylesheet" type="text/css"></link>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-1.3.2.min.js" type="text/javascript" ></script>
+    <script src="<?php echo base_url(); ?>assets/js/webwidget_menu_vertical_menu1.js" type="text/javascript" ></script>
+    <!--SLIDER-CSS-->
+    <link href="<?php echo base_url(); ?>assets/css/style2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script src="
+<?php
+/*if (current_url() === base_url() . index_page()) {*/
+    echo base_url() . "assets/js/script.js";
+/*} else {
+    echo base_url() . "assets/js/carousel.js";
+}*/
+?>
+    "  type="text/javascript" ></script>
+    <!--SLIDER-CSS-END-->
+    <!--NAV-->
+    <link href="<?php echo base_url(); ?>assets/css/style3.css" rel="stylesheet" type="text/css" media="screen"/>
+</head>
